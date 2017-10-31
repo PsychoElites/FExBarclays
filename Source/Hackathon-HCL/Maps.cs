@@ -1,4 +1,4 @@
-﻿using Android.App;
+using Android.App;
 using Android.Widget;
 using Android.OS;
 using Android.Gms.Maps;
@@ -15,6 +15,7 @@ using System.Net.Http;
 using System.Net;
 using System.Threading.Tasks;
 using System.Linq;
+
 
 namespace Hackathon_HCL
 {
@@ -82,7 +83,7 @@ namespace Hackathon_HCL
 
         }
 
-        private void ClickEvents()
+        private void ClickEvents()  //Button click events.
         {
             buttonRestRoom.Click += buttonRestRoom_Click;
             buttonCafe.Click += buttonCafe_Click;
@@ -246,7 +247,7 @@ namespace Hackathon_HCL
         {
             if (mMap == null)
             {
-                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.Map).GetMapAsync(this);
+                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.Map).GetMapAsync(this); //Adds fragmentfor the diplay of map
             }
         }
 
