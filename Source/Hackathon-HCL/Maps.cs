@@ -83,7 +83,7 @@ namespace Hackathon_HCL
 
         }
 
-        private void ClickEvents()
+        private void ClickEvents()  //Button click events.
         {
             buttonRestRoom.Click += buttonRestRoom_Click;
             buttonCafe.Click += buttonCafe_Click;
